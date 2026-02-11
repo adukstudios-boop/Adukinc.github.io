@@ -1,2 +1,3831 @@
 # Adukinc.github.io
 Aduk incorporation full website 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    
+    <!-- Primary Meta Tags -->
+    <title>Aduk Studios | Zimbabwe's Premier Multimedia & Entertainment Studio</title>
+    <meta name="title" content="Aduk Studios | Where Vision Becomes Reality">
+    <meta name="description" content="Aduk Studios is Zimbabwe's premier multimedia and entertainment studio offering professional music production, cinematic video & VFX, graphic design, and event production. From Vision to VFX: Where Art Meets Innovation.">
+    <meta name="keywords" content="Aduk Studios, Zimbabwe music studio, video production Zimbabwe, VFX Africa, graphic design Zimbabwe, event production, recording studio Gweru, ChaBanger, Maki Wacho, Blue Chillzy">
+    <meta name="author" content="Aduk Studios">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adukstudios.co.zw">
+    <meta property="og:title" content="Aduk Studios | Where Vision Becomes Reality">
+    <meta property="og:description" content="From Vision to VFX: Where Art Meets Innovation. Zimbabwe's premier creative studio for music, film, design, and events.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/8A2BE2/FFFFFF?text=Aduk+Studios">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://adukstudios.co.zw">
+    <meta property="twitter:title" content="Aduk Studios | Where Vision Becomes Reality">
+    <meta property="twitter:description" content="From Vision to VFX: Where Art Meets Innovation. Zimbabwe's premier creative studio for music, film, design, and events.">
+    <meta property="twitter:image" content="https://via.placeholder.com/1200x630/8A2BE2/FFFFFF?text=Aduk+Studios">
+    
+    <!-- Favicon / Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%238A2BE2'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial'>A</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%238A2BE2'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial'>A</text></svg>">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://adukstudios.co.zw">
+    
+    <style>
+        /*! Aduk Studios Official Website v2.0 | © 2024 Aduk Studios | All Rights Reserved */
+        
+        /* ===== CSS RESET & VARIABLES ===== */
+        :root {
+            /* Colors - Primary */
+            --primary: #8A2BE2;
+            --primary-dark: #6A0DAD;
+            --primary-light: #9D4EDD;
+            --secondary: #FF6B35;
+            --secondary-dark: #E5561C;
+            --secondary-light: #FF8C5A;
+            
+            /* Colors - Neutral */
+            --dark: #0A0A14;
+            --darker: #05050A;
+            --light: #FFFFFF;
+            --gray: #6C757D;
+            --gray-light: #E9ECEF;
+            --gray-dark: #343A40;
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            --gradient-secondary: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+            --gradient-accent: linear-gradient(135deg, var(--primary), var(--secondary));
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+            --shadow: 0 5px 15px rgba(0,0,0,0.2);
+            --shadow-lg: 0 15px 30px rgba(0,0,0,0.3);
+            --shadow-glow: 0 0 20px rgba(138,43,226,0.3);
+            
+            /* Spacing */
+            --section-padding: 100px 0;
+            --container-max-width: 1200px;
+            --border-radius: 12px;
+            --border-radius-sm: 8px;
+            --border-radius-lg: 20px;
+            
+            /* Transitions */
+            --transition-fast: 0.2s ease;
+            --transition: 0.3s ease;
+            --transition-slow: 0.5s ease;
+            
+            /* Z-index layers */
+            --z-negative: -1;
+            --z-normal: 1;
+            --z-dropdown: 100;
+            --z-sticky: 200;
+            --z-fixed: 300;
+            --z-modal: 400;
+            --z-popover: 500;
+            --z-tooltip: 600;
+            --z-toast: 700;
+        }
+
+        /* Dark mode adjustments */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --dark: #0A0A14;
+                --darker: #05050A;
+            }
+        }
+
+        /* Reduced motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--light);
+            background-color: var(--dark);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul, ol {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        button, input, select, textarea {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            cursor: pointer;
+            background: none;
+        }
+
+        /* ===== UTILITY CLASSES ===== */
+        .container {
+            width: 100%;
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: var(--section-padding);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            position: relative;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-accent);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 20px auto 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: var(--z-normal);
+            border: 1px solid transparent;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+            z-index: var(--z-negative);
+        }
+
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--gradient-secondary);
+            color: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--light);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: var(--z-fixed);
+            padding: 20px 0;
+            transition: var(--transition);
+            background-color: rgba(10, 10, 20, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .header.scrolled {
+            padding: 15px 0;
+            box-shadow: var(--shadow);
+            background-color: rgba(10, 10, 20, 0.98);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .logo:hover .logo-icon {
+            transform: rotate(10deg);
+            color: var(--secondary);
+        }
+
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            color: var(--light);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:not(.booking-btn)::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-secondary);
+            left: 0;
+            bottom: -5px;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover:not(.booking-btn) {
+            color: var(--secondary);
+        }
+
+        .nav-link:hover:not(.booking-btn)::after {
+            width: 100%;
+        }
+
+        .booking-btn {
+            background: var(--gradient-secondary);
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .booking-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--light);
+            cursor: pointer;
+            background: none;
+            border: none;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 120px;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(rgba(10, 10, 20, 0.9), rgba(10, 10, 20, 0.9)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900"><rect width="1600" height="900" fill="%230A0A14"/><circle cx="400" cy="300" r="200" fill="%238A2BE2" opacity="0.1"/><circle cx="1200" cy="600" r="300" fill="%23FF6B35" opacity="0.1"/><path d="M0 600 L400 400 L800 650 L1200 500 L1600 700 L1600 900 L0 900 Z" fill="%238A2BE2" opacity="0.05"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            z-index: var(--z-negative);
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(138,43,226,0.15) 0%, transparent 70%);
+            top: -200px;
+            right: -200px;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,107,53,0.12) 0%, transparent 70%);
+            bottom: -150px;
+            left: -150px;
+            animation: float 25s infinite ease-in-out reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(30px, 30px); }
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: var(--z-normal);
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin-bottom: 20px;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.1;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-tagline {
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            margin-bottom: 25px;
+            color: var(--light);
+            font-weight: 300;
+            animation: fadeInUp 1s ease 0.2s both;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 700px;
+            animation: fadeInUp 1s ease 0.4s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 40px;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--light);
+            font-size: 1.5rem;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            z-index: var(--z-normal);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+            40% { transform: translateY(-20px) translateX(-50%); }
+            60% { transform: translateY(-10px) translateX(-50%); }
+        }
+
+        /* ===== STUDIO OVERVIEW ===== */
+        .overview {
+            background-color: var(--darker);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .overview-content h3 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 20px;
+            color: var(--light);
+        }
+
+        .overview-text {
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+        }
+
+        .overview-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 10px 20px;
+            background: rgba(138, 43, 226, 0.05);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(138, 43, 226, 0.1);
+            transition: var(--transition);
+        }
+
+        .detail-item:hover {
+            background: rgba(138, 43, 226, 0.1);
+            border-color: var(--primary);
+            transform: translateX(10px);
+        }
+
+        .detail-item i {
+            color: var(--primary);
+            font-size: 1.2rem;
+            width: 30px;
+        }
+
+        .detail-item strong {
+            color: var(--light);
+            margin-right: 5px;
+        }
+
+        .brand-values h4 {
+            margin-bottom: 15px;
+            color: var(--light);
+            font-size: 1.2rem;
+        }
+
+        .values-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .value-tag {
+            background: rgba(138, 43, 226, 0.08);
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            color: var(--primary-light);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: var(--transition);
+            cursor: default;
+        }
+
+        .value-tag:hover {
+            background: rgba(138, 43, 226, 0.15);
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+
+        .overview-media {
+            position: relative;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .media-placeholder {
+            width: 100%;
+            height: 500px;
+            background: var(--gradient-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .media-placeholder:hover {
+            transform: scale(1.05);
+        }
+
+        .media-placeholder i {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        .media-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* ===== DIVISIONS SECTION ===== */
+        .divisions {
+            background-color: var(--dark);
+        }
+
+        .divisions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .division-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: var(--z-normal);
+        }
+
+        .division-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: var(--transition);
+            z-index: var(--z-negative);
+        }
+
+        .division-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .division-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .division-header {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary);
+            background: rgba(138, 43, 226, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .division-header i {
+            position: relative;
+            z-index: var(--z-normal);
+            transition: var(--transition);
+        }
+
+        .division-card:hover .division-header i {
+            transform: scale(1.2);
+            color: var(--secondary);
+        }
+
+        .division-body {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .division-body h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--light);
+        }
+
+        .division-tagline {
+            color: var(--secondary);
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .division-description {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .division-services {
+            margin: 20px 0;
+        }
+
+        .division-services li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+        }
+
+        .division-services li i {
+            color: var(--secondary);
+            font-size: 0.85rem;
+        }
+
+        .division-btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: rgba(138, 43, 226, 0.1);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            color: var(--primary);
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .division-btn:hover {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+
+        .division-btn i {
+            transition: var(--transition);
+        }
+
+        .division-btn:hover i {
+            transform: translateX(5px);
+        }
+
+        /* ===== TEAM SECTION ===== */
+        .team {
+            background-color: var(--darker);
+        }
+
+        .team-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 30px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .tab-btn.active {
+            background: var(--gradient-primary);
+            border-color: transparent;
+        }
+
+        .tab-btn:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .team-grid.hidden {
+            display: none;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+
+        .member-avatar {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: white;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member-avatar i {
+            position: relative;
+            z-index: var(--z-normal);
+            transition: var(--transition);
+        }
+
+        .team-member:hover .member-avatar i {
+            transform: scale(1.2);
+        }
+
+        .member-info {
+            padding: 25px;
+        }
+
+        .member-name {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+            color: var(--light);
+        }
+
+        .member-role {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .member-period {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .member-social {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .member-social a {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .member-social a:hover {
+            background: var(--gradient-primary);
+            transform: translateY(-3px);
+        }
+
+        /* ===== PROJECTS SECTION ===== */
+        .projects {
+            background-color: var(--dark);
+            overflow: hidden;
+        }
+
+        .projects-slider {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform var(--transition-slow);
+            border-radius: var(--border-radius);
+        }
+
+        .slider-slide {
+            flex: 0 0 100%;
+            padding: 10px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .project-image {
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            transform: scale(0.8);
+            transition: var(--transition);
+        }
+
+        .project-card:hover .play-button {
+            transform: scale(1);
+        }
+
+        .play-button:hover {
+            transform: scale(1.1) !important;
+        }
+
+        .project-details {
+            padding: 30px;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--light);
+        }
+
+        .project-description {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(255, 107, 53, 0.08);
+            color: var(--secondary);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 107, 53, 0.2);
+        }
+
+        .slider-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .slider-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .slider-btn:hover {
+            background: var(--gradient-primary);
+            border-color: transparent;
+        }
+
+        .slider-dots {
+            display: flex;
+            gap: 12px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .dot.active {
+            background: var(--primary);
+            transform: scale(1.3);
+        }
+
+        .projects-cta {
+            text-align: center;
+            margin-top: 60px;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .projects-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            color: var(--light);
+        }
+
+        /* ===== BOOKING SECTION ===== */
+        .booking {
+            background: var(--darker);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .booking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .booking-form {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--light);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--light);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            background: rgba(138, 43, 226, 0.05);
+            box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.1);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .form-group select option {
+            background: var(--dark);
+            color: var(--light);
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 20px;
+            padding: 16px;
+            font-size: 1.1rem;
+        }
+
+        .booking-info h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--light);
+        }
+
+        .features-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .feature-item:hover {
+            background: rgba(138, 43, 226, 0.05);
+            border-color: var(--primary);
+            transform: translateX(10px);
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            color: var(--secondary);
+        }
+
+        .feature-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: var(--light);
+        }
+
+        .feature-content p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .booking-contact {
+            background: rgba(138, 43, 226, 0.05);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(138, 43, 226, 0.2);
+        }
+
+        .booking-contact h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--light);
+        }
+
+        .booking-contact p {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .booking-contact i {
+            color: var(--primary);
+            width: 25px;
+            font-size: 1.2rem;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact {
+            background: var(--dark);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--light);
+        }
+
+        .contact-header p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .contact-details-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            background: rgba(138, 43, 226, 0.05);
+            border-color: var(--primary);
+            transform: translateX(10px);
+        }
+
+        .contact-item i {
+            font-size: 1.3rem;
+            color: var(--primary);
+            width: 30px;
+        }
+
+        .contact-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            color: var(--light);
+        }
+
+        .contact-item p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.5;
+        }
+
+        .social-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--light);
+        }
+
+        .social-grid {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.03);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-size: 1.4rem;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .social-link:hover {
+            background: var(--gradient-primary);
+            transform: translateY(-5px);
+            border-color: transparent;
+        }
+
+        .map-container {
+            height: 100%;
+            min-height: 450px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .map-icon {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .map-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--light);
+        }
+
+        .map-address {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .map-btn {
+            background: rgba(138, 43, 226, 0.1);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            color: var(--primary);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .map-btn:hover {
+            background: var(--gradient-primary);
+            color: white;
+            border-color: transparent;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--darker);
+            padding: 80px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            max-width: 350px;
+        }
+
+        .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 2rem;
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        .footer-tagline {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: var(--light);
+            font-weight: 600;
+        }
+
+        .footer-description {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .footer-quote {
+            font-style: italic;
+            color: var(--secondary);
+            padding-left: 20px;
+            border-left: 3px solid var(--secondary);
+            font-size: 0.95rem;
+        }
+
+        .footer-heading {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            color: var(--light);
+            position: relative;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient-primary);
+            left: 0;
+            bottom: -10px;
+            border-radius: 2px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-link i {
+            font-size: 0.75rem;
+            color: var(--primary);
+        }
+
+        .footer-link:hover {
+            color: var(--secondary);
+            padding-left: 5px;
+        }
+
+        .footer-services-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-service-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .footer-service-item i {
+            color: var(--primary);
+            width: 20px;
+        }
+
+        .newsletter-text {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 14px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--light);
+            font-size: 0.95rem;
+        }
+
+        .newsletter-btn {
+            padding: 14px 20px;
+            border-radius: 8px;
+            background: var(--gradient-primary);
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .footer-contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .footer-contact-item i {
+            color: var(--primary);
+            width: 20px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .copyright {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .legal-link {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .legal-link:hover {
+            color: var(--secondary);
+        }
+
+        /* ===== MODAL ===== */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: var(--z-modal);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--darker);
+            border-radius: var(--border-radius);
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-lg);
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: var(--z-tooltip);
+        }
+
+        .modal-close:hover {
+            background: var(--gradient-secondary);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            padding: 50px;
+        }
+
+        .modal-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .modal-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--light);
+            text-align: center;
+        }
+
+        .modal-description {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .modal-section {
+            margin-bottom: 30px;
+        }
+
+        .modal-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+
+        .modal-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .modal-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .modal-list li i {
+            color: var(--primary);
+            width: 20px;
+        }
+
+        .modal-cta {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .modal-cta p {
+            margin-bottom: 20px;
+            color: var(--light);
+            font-size: 1.1rem;
+        }
+
+        /* ===== BACK TO TOP ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            z-index: var(--z-sticky);
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .back-to-top.visible {
+            display: flex;
+        }
+
+        /* ===== LOADER ===== */
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: var(--z-toast);
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .page-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-content {
+            text-align: center;
+        }
+
+        .loader-icon {
+            font-size: 4rem;
+            color: var(--primary);
+            animation: spin 2s infinite linear;
+            margin-bottom: 20px;
+        }
+
+        .loader-text {
+            font-size: 1.2rem;
+            color: var(--light);
+            letter-spacing: 2px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* ===== COOKIE CONSENT ===== */
+        .cookie-consent {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            max-width: 400px;
+            background: var(--darker);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: none;
+            z-index: var(--z-popover);
+            animation: slideIn 0.3s ease;
+        }
+
+        .cookie-consent.show {
+            display: block;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cookie-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--light);
+        }
+
+        .cookie-text {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .cookie-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .cookie-btn {
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .cookie-accept {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+        }
+
+        .cookie-decline {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--light);
+        }
+
+        .cookie-decline:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* ===== RESPONSIVE STYLES ===== */
+        @media (max-width: 1200px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .overview-grid,
+            .booking-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .overview-media {
+                order: -1;
+            }
+
+            .media-placeholder {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--darker);
+                padding: 30px;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+            }
+
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-link {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .team-tabs {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .tab-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .slider-btn {
+                width: 45px;
+                height: 45px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cookie-consent {
+                left: 20px;
+                right: 20px;
+                max-width: none;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .modal-body {
+                padding: 30px;
+            }
+
+            .modal-title {
+                font-size: 1.5rem;
+            }
+
+            .project-image {
+                height: 200px;
+            }
+
+            .play-button {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+
+            .booking-form {
+                padding: 25px;
+            }
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            .header,
+            .hero-bg,
+            .scroll-indicator,
+            .slider-btn,
+            .back-to-top,
+            .cookie-consent,
+            .page-loader,
+            .modal,
+            .booking-btn,
+            .division-btn,
+            .btn {
+                display: none !important;
+            }
+
+            body {
+                background: white;
+                color: black;
+            }
+
+            .section-title h2 {
+                -webkit-text-fill-color: black;
+                background: none;
+            }
+
+            .division-card,
+            .team-member,
+            .project-card {
+                break-inside: avoid;
+                border: 1px solid #ddd;
+            }
+        }
+
+        /* ===== ACCESSIBILITY ===== */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .focus-visible:focus-visible {
+            outline: 3px solid var(--secondary);
+            outline-offset: 3px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 20px;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            z-index: var(--z-toast);
+            transition: var(--transition);
+        }
+
+        .skip-link:focus {
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <i class="fas fa-film"></i>
+            </div>
+            <div class="loader-text">ADUK STUDIOS</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo" aria-label="Aduk Studios Home">
+                <div class="logo-icon">
+                    <i class="fas fa-film"></i>
+                </div>
+                <div class="logo-text">ADUK STUDIOS</div>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#overview" class="nav-link">Overview</a></li>
+                    <li><a href="#divisions" class="nav-link">Divisions</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#booking" class="nav-link booking-btn">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">From Vision to VFX</h1>
+                    <div class="hero-tagline">Where Art Meets Innovation</div>
+                    <p class="hero-description">Aduk Studios is a premier multimedia and entertainment studio based in Zimbabwe, offering full-scale creative production across music, film, design, and live events.</p>
+                    <div class="hero-buttons">
+                        <a href="#booking" class="btn btn-primary">
+                            <i class="fas fa-calendar-check"></i>
+                            Book a Session
+                        </a>
+                        <a href="#divisions" class="btn btn-outline">
+                            <i class="fas fa-chevron-right"></i>
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Studio Overview -->
+        <section class="section overview" id="overview">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Studio Overview</h2>
+                    <p class="section-subtitle">A creative force behind compelling visuals, sound, and live experiences in Africa's rising entertainment landscape.</p>
+                </div>
+
+                <div class="overview-grid">
+                    <div class="overview-content">
+                        <h3>Create. Captivate. Celebrate.</h3>
+                        <p class="overview-text">Founded with a mission to centralize creative tools under one roof, the studio serves as a launchpad for artists, visionaries, and businesses looking to produce industry-standard work with global appeal.</p>
+
+                        <div class="overview-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Founded:</strong> Early 2020s
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user-tie"></i>
+                                <div>
+                                    <strong>Founder:</strong> Kudakwashe Chatyoka (ChaBanger)
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Headquarters:</strong> Gweru, Zimbabwe
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="brand-values">
+                            <h4>Core Brand Values</h4>
+                            <div class="values-grid">
+                                <span class="value-tag">Integrity</span>
+                                <span class="value-tag">Creativity</span>
+                                <span class="value-tag">Collaboration</span>
+                                <span class="value-tag">Excellence</span>
+                                <span class="value-tag">Empowerment</span>
+                                <span class="value-tag">Cultural Fusion</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="overview-media">
+                        <div class="media-placeholder">
+                            <i class="fas fa-video"></i>
+                            <i class="fas fa-music" style="position: absolute; top: 30%; right: 30%; font-size: 2rem; opacity: 0.5;"></i>
+                            <i class="fas fa-paint-brush" style="position: absolute; bottom: 30%; left: 30%; font-size: 2rem; opacity: 0.5;"></i>
+                            <div class="media-caption">
+                                <i class="fas fa-map-pin"></i> Aduk Studios, Gweru
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divisions Section -->
+        <section class="section divisions" id="divisions">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Divisions</h2>
+                    <p class="section-subtitle">One studio. Endless possibilities. Explore our comprehensive creative services.</p>
+                </div>
+
+                <div class="divisions-grid">
+                    <!-- Music Division -->
+                    <div class="division-card" data-division="music">
+                        <div class="division-header">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="division-body">
+                            <h3>Aduk Studio</h3>
+                            <div class="division-tagline">Where raw sound becomes a mastered anthem</div>
+                            <p class="division-description">Full audio production for artists who demand clarity, creativity, and control.</p>
+                            <ul class="division-services" aria-hidden="true">
+                                <li><i class="fas fa-check"></i> Studio Recording</li>
+                                <li><i class="fas fa-check"></i> Mixing & Mastering</li>
+                                <li><i class="fas fa-check"></i> Music Production</li>
+                                <li><i class="fas fa-check"></i> Jingles & Voice Overs</li>
+                            </ul>
+                            <button class="division-btn" data-division="music">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Visuals Division -->
+                    <div class="division-card" data-division="visuals">
+                        <div class="division-header">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="division-body">
+                            <h3>Aduk Visuals & VFX</h3>
+                            <div class="division-tagline">Your visuals. Reimagined with gravity-defying flair</div>
+                            <p class="division-description">Cinematic production for music videos, films, and branded content.</p>
+                            <ul class="division-services" aria-hidden="true">
+                                <li><i class="fas fa-check"></i> 4K Cinematic Production</li>
+                                <li><i class="fas fa-check"></i> Visual Effects & CGI</li>
+                                <li><i class="fas fa-check"></i> Green Screen Compositing</li>
+                                <li><i class="fas fa-check"></i> Motion Graphics</li>
+                            </ul>
+                            <button class="division-btn" data-division="visuals">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Design Division -->
+                    <div class="division-card" data-division="design">
+                        <div class="division-header">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="division-body">
+                            <h3>Aduk Design Lab</h3>
+                            <div class="division-tagline">Every pixel, a purpose</div>
+                            <p class="division-description">Fashion, graphic and motion design to bring ideas to life and make brands unforgettable.</p>
+                            <ul class="division-services" aria-hidden="true">
+                                <li><i class="fas fa-check"></i> Logo Design & Brand Kits</li>
+                                <li><i class="fas fa-check"></i> Album/Single Cover Art</li>
+                                <li><i class="fas fa-check"></i> Motion Posters</li>
+                                <li><i class="fas fa-check"></i> Custom Clothing</li>
+                            </ul>
+                            <button class="division-btn" data-division="design">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Events Division -->
+                    <div class="division-card" data-division="events">
+                        <div class="division-header">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="division-body">
+                            <h3>Aduk Entertainment</h3>
+                            <div class="division-tagline">We don't plan events—we produce experiences</div>
+                            <p class="division-description">Full service event production for private, public, and corporate spaces.</p>
+                            <ul class="division-services" aria-hidden="true">
+                                <li><i class="fas fa-check"></i> Event Planning & Coordination</li>
+                                <li><i class="fas fa-check"></i> Set Design & Décor</li>
+                                <li><i class="fas fa-check"></i> DMX Lighting & Stage Effects</li>
+                                <li><i class="fas fa-check"></i> Sound System Installation</li>
+                            </ul>
+                            <button class="division-btn" data-division="events">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section team" id="team">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Creative Team</h2>
+                    <p class="section-subtitle">Meet the talented individuals who make the magic happen at Aduk Studios.</p>
+                </div>
+
+                <div class="team-tabs">
+                    <button class="tab-btn active" data-tab="staff">Studio Staff</button>
+                    <button class="tab-btn" data-tab="artists">Signed Artists</button>
+                </div>
+
+                <!-- Staff Grid -->
+                <div class="team-grid" id="staffGrid">
+                    <div class="team-member">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #8A2BE2, #6A0DAD);">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">ChaBanger</h3>
+                            <span class="member-role">CEO / Founder</span>
+                            <span class="member-period">2020 - Present</span>
+                            <div class="member-social">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #FF6B35, #E5561C);">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">DJ Max850Magixian</h3>
+                            <span class="member-role">Aduk Music Director</span>
+                            <span class="member-period">2024 - Present</span>
+                            <div class="member-social">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #2193b0, #6dd5ed);">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Dir 5G (Muyenzi)</h3>
+                            <span class="member-role">Visuals Director</span>
+                            <span class="member-period">2024 - Present</span>
+                            <div class="member-social">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #8e2de2, #4a00e0);">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">FK Scott</h3>
+                            <span class="member-role">Marketing Manager / Artist</span>
+                            <span class="member-period">2022 - Present</span>
+                            <div class="member-social">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artists Grid -->
+                <div class="team-grid hidden" id="artistsGrid">
+                    <div class="team-member">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #f46b45, #eea849);">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Maki Wacho</h3>
+                            <span class="member-role">Afro Fusion Artist</span>
+                            <span class="member-period">2024 - Present</span>
+                            <div class="member-social">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #2c3e50, #3498db);">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Blue Chillzy</h3>
+                            <span class="member-role">Hiphop Artist</span>
+                            <span class="member-period">2025 - Present</span>
+                            <div class="member-social">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #8E2DE2, #4A00E0);">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Ley25</h3>
+                            <span class="member-role">Hiphop / Trap Artist</span>
+                            <span class="member-period">2022 - Present</span>
+                            <div class="member-social">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #FF6B35, #F9C74F);">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Alkatel</h3>
+                            <span class="member-role">Dancehall Artist</span>
+                            <span class="member-period">2022 - Present</span>
+                            <div class="member-social">
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Notable Productions</h2>
+                    <p class="section-subtitle">A showcase of our most impactful creative works</p>
+                </div>
+
+                <div class="projects-slider">
+                    <div class="slider-container" id="sliderContainer">
+                        <div class="slider-slide">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <i class="fas fa-play-circle" style="font-size: 5rem; opacity: 0.8;"></i>
+                                    <div class="project-overlay">
+                                        <button class="play-button" aria-label="Play video">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="project-details">
+                                    <h3 class="project-title">Maki Wacho – "Kupetera Ipapo"</h3>
+                                    <p class="project-description">An urban music video and cover art showcasing vibrant daily themes and industry-dominant visuals.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Music Video</span>
+                                        <span class="tag">VFX</span>
+                                        <span class="tag">Cover Art</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-slide">
+                            <div class="project-card">
+                                <div class="project-image" style="background: linear-gradient(135deg, #2c3e50, #3498db);">
+                                    <i class="fas fa-film" style="font-size: 5rem; opacity: 0.8;"></i>
+                                    <div class="project-overlay">
+                                        <button class="play-button" aria-label="Play video">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="project-details">
+                                    <h3 class="project-title">Blue Chillzy – "Man from Cholocho"</h3>
+                                    <p class="project-description">Professionally scripted video production integrating creative visual effects, camera work, lighting, and street narrative.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">Short Film</span>
+                                        <span class="tag">Cinematic</span>
+                                        <span class="tag">Storytelling</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-slide">
+                            <div class="project-card">
+                                <div class="project-image" style="background: linear-gradient(135deg, #8E2DE2, #4A00E0);">
+                                    <i class="fas fa-headphones" style="font-size: 5rem; opacity: 0.8;"></i>
+                                    <div class="project-overlay">
+                                        <button class="play-button" aria-label="Play video">
+                                            <i class="fas fa-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="project-details">
+                                    <h3 class="project-title">DJ Max850Magixian - "PaRoma Cypher"</h3>
+                                    <p class="project-description">High-energy DJ performance showcasing tight mixing and curation for the dancefloor.</p>
+                                    <div class="project-tags">
+                                        <span class="tag">DJ Mix</span>
+                                        <span class="tag">Live Performance</span>
+                                        <span class="tag">Audio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button class="slider-btn" id="prevSlide" aria-label="Previous slide">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="slider-dots" id="sliderDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button class="slider-btn" id="nextSlide" aria-label="Next slide">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="projects-cta">
+                    <p>Want to see more of our work?</p>
+                    <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube"></i>
+                        Visit Our YouTube Channel
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="section booking" id="booking">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Book Your Session</h2>
+                    <p class="section-subtitle">Ready to bring your creative vision to life? Get started today.</p>
+                </div>
+
+                <div class="booking-grid">
+                    <div class="booking-form">
+                        <form id="bookingForm" action="#" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required placeholder="your@email.com">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="+263 XXX XXX XXX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Service Required *</label>
+                                    <select id="service" name="service" required>
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="music">Music Production</option>
+                                        <option value="visuals">Video & VFX</option>
+                                        <option value="design">Graphic Design</option>
+                                        <option value="events">Event Production</option>
+                                        <option value="multiple">Multiple Services</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Preferred Date (Optional)</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project, requirements, and any specific requests..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Submit Booking Request
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="booking-info">
+                        <h3>Why Choose Aduk Studios?</h3>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Professional Quality</h4>
+                                    <p>Industry-standard equipment and experienced professionals</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Flexible Scheduling</h4>
+                                    <p>We work around your schedule to deliver on time</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Competitive Pricing</h4>
+                                    <p>High-quality services at accessible rates</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>24/7 Support</h4>
+                                    <p>Dedicated support throughout your project</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking-contact">
+                            <h4>Prefer to call?</h4>
+                            <p><i class="fas fa-phone"></i> +263 776 105 031</p>
+                            <p><i class="fas fa-envelope"></i> adukstudios@gmail.com</p>
+                            <p><i class="fas fa-clock"></i> Mon-Fri: 8AM - 4PM | Sat: 8AM - 12PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-header">
+                            <h2>Get In Touch</h2>
+                            <p>Whether you're an artist looking to record your next hit, a business needing branding, or planning an unforgettable event, Aduk Studios is here to help.</p>
+                        </div>
+
+                        <div class="contact-details-grid">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Studio Location</h4>
+                                    <p>Gweru, Zimbabwe<br>(Main Studio Complex)</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+263 776 105 031<br>+263 XXX XXX XXX (Alternative)</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>adukstudios@gmail.com<br>bookings@adukinc.co.zw</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Business Hours</h4>
+                                    <p>Monday - Friday: 8AM - 4PM<br>Saturday: 8AM - 12PM<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <h4>Connect With Us</h4>
+                            <div class="social-grid">
+                                <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <div class="map-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 class="map-title">Find Us</h3>
+                        <p class="map-address">
+                            Aduk Studios Headquarters<br>
+                            Gweru, Zimbabwe
+                        </p>
+                        <button class="map-btn" id="mapBtn">
+                            <i class="fas fa-directions"></i>
+                            Get Directions
+                        </button>
+                        <p style="margin-top: 20px; color: rgba(255,255,255,0.5); font-size: 0.85rem;">
+                            <i class="fas fa-info-circle"></i> Exact location provided upon booking
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">ADUK STUDIOS</div>
+                    <p class="footer-tagline">From Vision to VFX: Where Art Meets Innovation</p>
+                    <p class="footer-description">A premier multimedia and entertainment studio based in Zimbabwe, offering full-scale creative production across music, film, design, and live events.</p>
+                    <p class="footer-quote">"In a world of noise, we create moments that speak forever."</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#home" class="footer-link"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#overview" class="footer-link"><i class="fas fa-chevron-right"></i> Studio Overview</a></li>
+                        <li><a href="#divisions" class="footer-link"><i class="fas fa-chevron-right"></i> Our Divisions</a></li>
+                        <li><a href="#team" class="footer-link"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                        <li><a href="#projects" class="footer-link"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#booking" class="footer-link"><i class="fas fa-chevron-right"></i> Book a Session</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h4 class="footer-heading">Our Services</h4>
+                    <ul class="footer-services-list">
+                        <li class="footer-service-item"><i class="fas fa-music"></i> Music Production</li>
+                        <li class="footer-service-item"><i class="fas fa-video"></i> Video & VFX</li>
+                        <li class="footer-service-item"><i class="fas fa-paint-brush"></i> Graphic Design</li>
+                        <li class="footer-service-item"><i class="fas fa-calendar-alt"></i> Event Production</li>
+                        <li class="footer-service-item"><i class="fas fa-tshirt"></i> Custom Clothing</li>
+                        <li class="footer-service-item"><i class="fas fa-print"></i> Printing Services</li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Stay Connected</h4>
+                    <p class="newsletter-text">Subscribe to our newsletter for the latest updates, offers, and creative insights.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email for newsletter">
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="footer-contact-info">
+                        <p class="footer-contact-item">
+                            <i class="fas fa-globe"></i> www.adukinc.co.zw
+                        </p>
+                        <p class="footer-contact-item">
+                            <i class="fas fa-envelope"></i> adukstudios@gmail.com
+                        </p>
+                        <p class="footer-contact-item">
+                            <i class="fas fa-phone"></i> +263 776 105 031
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Aduk Studios. All Rights Reserved. "Create. Captivate. Celebrate."</p>
+                <div class="legal-links">
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Terms of Service</a>
+                    <a href="#" class="legal-link">Cookie Policy</a>
+                    <a href="#" class="legal-link">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Division Details Modal -->
+    <div class="modal" id="divisionModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <h4 class="cookie-title">Cookie Consent</h4>
+        <p class="cookie-text">We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button class="cookie-btn cookie-accept" id="acceptCookies">Accept All</button>
+            <button class="cookie-btn cookie-decline" id="declineCookies">Necessary Only</button>
+        </div>
+    </div>
+
+    <script>
+        // ===== Aduk Studios Website v2.0 - Complete JavaScript Functionality =====
+        // ===== Production Ready - Optimized for GitHub Pages =====
+
+        (function() {
+            'use strict';
+
+            // ===== DOM Elements =====
+            const DOM = {
+                // Header
+                header: document.getElementById('header'),
+                mobileMenuBtn: document.getElementById('mobileMenuBtn'),
+                navMenu: document.getElementById('navMenu'),
+                
+                // Loader
+                pageLoader: document.getElementById('pageLoader'),
+                
+                // Team Tabs
+                teamTabs: document.querySelectorAll('.tab-btn'),
+                staffGrid: document.getElementById('staffGrid'),
+                artistsGrid: document.getElementById('artistsGrid'),
+                
+                // Slider
+                sliderContainer: document.getElementById('sliderContainer'),
+                slides: document.querySelectorAll('.slider-slide'),
+                prevBtn: document.getElementById('prevSlide'),
+                nextBtn: document.getElementById('nextSlide'),
+                dots: document.querySelectorAll('.dot'),
+                
+                // Division Modal
+                divisionBtns: document.querySelectorAll('.division-btn'),
+                modal: document.getElementById('divisionModal'),
+                modalBody: document.getElementById('modalBody'),
+                closeModal: document.getElementById('closeModal'),
+                
+                // Forms
+                bookingForm: document.getElementById('bookingForm'),
+                newsletterForm: document.getElementById('newsletterForm'),
+                
+                // Back to Top
+                backToTop: document.getElementById('backToTop'),
+                
+                // Map Button
+                mapBtn: document.getElementById('mapBtn'),
+                
+                // Cookie Consent
+                cookieConsent: document.getElementById('cookieConsent'),
+                acceptCookies: document.getElementById('acceptCookies'),
+                declineCookies: document.getElementById('declineCookies'),
+                
+                // Scroll Indicator
+                scrollIndicator: document.querySelector('.scroll-indicator'),
+                
+                // All links for smooth scroll
+                smoothLinks: document.querySelectorAll('a[href^="#"]:not([href="#"])')
+            };
+
+            // ===== State Management =====
+            const State = {
+                currentSlide: 0,
+                slideCount: DOM.slides?.length || 0,
+                isModalOpen: false,
+                isMenuOpen: false,
+                touchStartX: 0,
+                touchEndX: 0
+            };
+
+            // ===== Utility Functions =====
+            const Utils = {
+                // Debounce function for performance
+                debounce(func, wait) {
+                    let timeout;
+                    return function executedFunction(...args) {
+                        const later = () => {
+                            clearTimeout(timeout);
+                            func(...args);
+                        };
+                        clearTimeout(timeout);
+                        timeout = setTimeout(later, wait);
+                    };
+                },
+
+                // Throttle function for performance
+                throttle(func, limit) {
+                    let inThrottle;
+                    return function(...args) {
+                        if (!inThrottle) {
+                            func.apply(this, args);
+                            inThrottle = true;
+                            setTimeout(() => inThrottle = false, limit);
+                        }
+                    };
+                },
+
+                // Format phone number
+                formatPhoneNumber(value) {
+                    const cleaned = ('' + value).replace(/\D/g, '');
+                    const match = cleaned.match(/^(\d{3})(\d{3})(\d{3})$/);
+                    if (match) {
+                        return '+263 ' + match[1] + ' ' + match[2] + ' ' + match[3];
+                    }
+                    return value;
+                },
+
+                // Validate email
+                isValidEmail(email) {
+                    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return re.test(email);
+                },
+
+                // Show notification
+                showNotification(message, type = 'success') {
+                    const notification = document.createElement('div');
+                    notification.className = `notification notification-${type}`;
+                    notification.innerHTML = `
+                        <div class="notification-content">
+                            <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+                            <span>${message}</span>
+                            <button class="notification-close"><i class="fas fa-times"></i></button>
+                        </div>
+                    `;
+                    
+                    // Style notification
+                    notification.style.cssText = `
+                        position: fixed;
+                        top: 100px;
+                        right: 30px;
+                        background: ${type === 'success' ? 'linear-gradient(135deg, #8A2BE2, #6A0DAD)' : 'linear-gradient(135deg, #FF6B35, #E5561C)'};
+                        color: white;
+                        padding: 16px 24px;
+                        border-radius: 8px;
+                        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                        z-index: 1000;
+                        animation: slideIn 0.3s ease;
+                        max-width: 400px;
+                    `;
+
+                    document.body.appendChild(notification);
+
+                    // Auto remove after 5 seconds
+                    setTimeout(() => {
+                        notification.style.animation = 'slideOut 0.3s ease';
+                        setTimeout(() => notification.remove(), 300);
+                    }, 5000);
+
+                    // Close button handler
+                    notification.querySelector('.notification-close').addEventListener('click', () => {
+                        notification.style.animation = 'slideOut 0.3s ease';
+                        setTimeout(() => notification.remove(), 300);
+                    });
+                },
+
+                // Set cookie
+                setCookie(name, value, days) {
+                    const expires = new Date();
+                    expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+                    document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/;SameSite=Lax`;
+                },
+
+                // Get cookie
+                getCookie(name) {
+                    const value = `; ${document.cookie}`;
+                    const parts = value.split(`; ${name}=`);
+                    if (parts.length === 2) return parts.pop().split(';').shift();
+                }
+            };
+
+            // ===== Animation Functions =====
+            const Animations = {
+                // Page Loader
+                hideLoader() {
+                    if (DOM.pageLoader) {
+                        setTimeout(() => {
+                            DOM.pageLoader.classList.add('hidden');
+                            setTimeout(() => {
+                                DOM.pageLoader.style.display = 'none';
+                            }, 500);
+                        }, 1000);
+                    }
+                },
+
+                // Header scroll effect
+                initHeaderScroll() {
+                    window.addEventListener('scroll', Utils.throttle(() => {
+                        if (window.scrollY > 100) {
+                            DOM.header?.classList.add('scrolled');
+                        } else {
+                            DOM.header?.classList.remove('scrolled');
+                        }
+                    }, 100));
+                },
+
+                // Scroll reveal animation
+                initScrollReveal() {
+                    const observerOptions = {
+                        threshold: 0.1,
+                        rootMargin: '0px 0px -50px 0px'
+                    };
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.style.opacity = '1';
+                                entry.target.style.transform = 'translateY(0)';
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, observerOptions);
+
+                    // Observe elements for animation
+                    document.querySelectorAll('.division-card, .team-member, .project-card, .feature-item, .contact-item').forEach(el => {
+                        el.style.opacity = '0';
+                        el.style.transform = 'translateY(30px)';
+                        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        observer.observe(el);
+                    });
+                },
+
+                // Parallax effect for hero background
+                initParallax() {
+                    window.addEventListener('scroll', Utils.throttle(() => {
+                        const scrolled = window.scrollY;
+                        const heroBg = document.querySelector('.hero-bg');
+                        if (heroBg) {
+                            heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+                        }
+                    }, 10));
+                }
+            };
+
+            // ===== Mobile Menu =====
+            const MobileMenu = {
+                init() {
+                    if (!DOM.mobileMenuBtn || !DOM.navMenu) return;
+                    
+                    DOM.mobileMenuBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        this.toggleMenu();
+                    });
+
+                    // Close menu when clicking outside
+                    document.addEventListener('click', (e) => {
+                        if (State.isMenuOpen && !DOM.navMenu.contains(e.target) && !DOM.mobileMenuBtn.contains(e.target)) {
+                            this.closeMenu();
+                        }
+                    });
+
+                    // Close menu on escape key
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'Escape' && State.isMenuOpen) {
+                            this.closeMenu();
+                        }
+                    });
+
+                    // Close menu when window resizes above mobile breakpoint
+                    window.addEventListener('resize', Utils.debounce(() => {
+                        if (window.innerWidth > 768 && State.isMenuOpen) {
+                            this.closeMenu();
+                        }
+                    }, 250));
+                },
+
+                toggleMenu() {
+                    State.isMenuOpen = !State.isMenuOpen;
+                    DOM.navMenu.classList.toggle('active', State.isMenuOpen);
+                    DOM.mobileMenuBtn.innerHTML = State.isMenuOpen ? 
+                        '<i class="fas fa-times"></i>' : 
+                        '<i class="fas fa-bars"></i>';
+                    DOM.mobileMenuBtn.setAttribute('aria-expanded', State.isMenuOpen);
+                    document.body.style.overflow = State.isMenuOpen ? 'hidden' : '';
+                },
+
+                closeMenu() {
+                    State.isMenuOpen = false;
+                    DOM.navMenu.classList.remove('active');
+                    DOM.mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    DOM.mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    document.body.style.overflow = '';
+                }
+            };
+
+            // ===== Team Tabs =====
+            const TeamTabs = {
+                init() {
+                    if (!DOM.teamTabs.length) return;
+                    
+                    DOM.teamTabs.forEach(tab => {
+                        tab.addEventListener('click', () => {
+                            const tabName = tab.dataset.tab;
+                            this.switchTab(tabName);
+                        });
+                    });
+                },
+
+                switchTab(tabName) {
+                    // Update active tab
+                    DOM.teamTabs.forEach(t => t.classList.remove('active'));
+                    document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+
+                    // Show/hide grids
+                    if (DOM.staffGrid && DOM.artistsGrid) {
+                        if (tabName === 'staff') {
+                            DOM.staffGrid.classList.remove('hidden');
+                            DOM.artistsGrid.classList.add('hidden');
+                        } else {
+                            DOM.staffGrid.classList.add('hidden');
+                            DOM.artistsGrid.classList.remove('hidden');
+                        }
+                    }
+                }
+            };
+
+            // ===== Project Slider =====
+            const ProjectSlider = {
+                init() {
+                    if (!DOM.sliderContainer || !State.slideCount) return;
+                    
+                    this.updateSlider();
+                    
+                    DOM.prevBtn?.addEventListener('click', () => this.prevSlide());
+                    DOM.nextBtn?.addEventListener('click', () => this.nextSlide());
+                    
+                    // Dot navigation
+                    DOM.dots?.forEach((dot, index) => {
+                        dot.addEventListener('click', () => this.goToSlide(index));
+                    });
+
+                    // Touch events for mobile
+                    this.initTouchEvents();
+
+                    // Auto slide
+                    this.startAutoSlide();
+
+                    // Pause auto slide on hover
+                    const slider = document.querySelector('.projects-slider');
+                    slider?.addEventListener('mouseenter', () => this.stopAutoSlide());
+                    slider?.addEventListener('mouseleave', () => this.startAutoSlide());
+                },
+
+                updateSlider() {
+                    if (DOM.sliderContainer) {
+                        DOM.sliderContainer.style.transform = `translateX(-${State.currentSlide * 100}%)`;
+                    }
+                    
+                    // Update dots
+                    DOM.dots?.forEach((dot, index) => {
+                        dot.classList.toggle('active', index === State.currentSlide);
+                    });
+                },
+
+                nextSlide() {
+                    State.currentSlide = (State.currentSlide + 1) % State.slideCount;
+                    this.updateSlider();
+                },
+
+                prevSlide() {
+                    State.currentSlide = (State.currentSlide - 1 + State.slideCount) % State.slideCount;
+                    this.updateSlider();
+                },
+
+                goToSlide(index) {
+                    State.currentSlide = index;
+                    this.updateSlider();
+                },
+
+                initTouchEvents() {
+                    const slider = document.querySelector('.projects-slider');
+                    if (!slider) return;
+
+                    slider.addEventListener('touchstart', (e) => {
+                        State.touchStartX = e.changedTouches[0].screenX;
+                    }, { passive: true });
+
+                    slider.addEventListener('touchend', (e) => {
+                        State.touchEndX = e.changedTouches[0].screenX;
+                        this.handleSwipe();
+                    }, { passive: true });
+                },
+
+                handleSwipe() {
+                    const swipeThreshold = 50;
+                    const difference = State.touchStartX - State.touchEndX;
+
+                    if (Math.abs(difference) > swipeThreshold) {
+                        if (difference > 0) {
+                            this.nextSlide();
+                        } else {
+                            this.prevSlide();
+                        }
+                    }
+                },
+
+                autoSlideInterval: null,
+
+                startAutoSlide() {
+                    this.stopAutoSlide();
+                    this.autoSlideInterval = setInterval(() => this.nextSlide(), 5000);
+                },
+
+                stopAutoSlide() {
+                    if (this.autoSlideInterval) {
+                        clearInterval(this.autoSlideInterval);
+                        this.autoSlideInterval = null;
+                    }
+                }
+            };
+
+            // ===== Division Modal =====
+            const DivisionModal = {
+                divisionData: {
+                    music: {
+                        title: 'Aduk Studio (Music)',
+                        icon: 'fas fa-music',
+                        description: 'Where raw sound becomes a mastered anthem. Our state-of-the-art recording studio offers professional audio production services for artists of all genres.',
+                        services: [
+                            'Professional Studio Recording',
+                            'Mixing & Mastering',
+                            'Vocal Engineering & Tuning',
+                            'Music Production (Afrobeats, Amapiano, Hip-Hop, Gospel, R&B, Trap)',
+                            'Jingles & Voice Overs',
+                            'Event DJ\'s & MC\'s',
+                            'Sound Design & Post-Production'
+                        ],
+                        equipment: [
+                            'Professional Microphones (Neumann, AKG, Shure)',
+                            'Digital Audio Workstations (Pro Tools, Logic Pro, Ableton)',
+                            'High-End Studio Monitors',
+                            'Acoustic Treatment',
+                            'Outboard Gear & Analog Processing'
+                        ],
+                        pricing: 'Contact us for custom quotes based on your project needs'
+                    },
+                    visuals: {
+                        title: 'Aduk Visuals & VFX',
+                        icon: 'fas fa-video',
+                        description: 'Your visuals. Reimagined with gravity-defying flair. We produce cinematic content that tells compelling stories through stunning visuals.',
+                        services: [
+                            '4K Cinematic Video Production',
+                            'Visual Effects (VFX & CGI)',
+                            'Green Screen Compositing',
+                            'Motion Graphics & Animation',
+                            'Short Film Direction',
+                            'High-Definition Photography',
+                            'Interviews & Podcast Production'
+                        ],
+                        equipment: [
+                            '4K Cinema Cameras (Sony, RED, Blackmagic)',
+                            'Professional Lighting Kits',
+                            'Drone Photography',
+                            'VFX Software Suite (After Effects, Nuke, Maya)',
+                            'Color Grading Stations (DaVinci Resolve)'
+                        ],
+                        pricing: 'Project-based pricing starting from $500 USD'
+                    },
+                    design: {
+                        title: 'Aduk Design Lab',
+                        icon: 'fas fa-paint-brush',
+                        description: 'Every pixel, a purpose. Our design team creates stunning visuals that bring ideas to life and make brands unforgettable.',
+                        services: [
+                            'Logo Design & Brand Identity Kits',
+                            'Album/Single Cover Art',
+                            'Motion Posters & Visuals',
+                            'Thumbnails & Channel Branding',
+                            'Social Media Design Packs',
+                            'Printing Services (Sublimation, DTF, Inkjet, Paper, Billboards)',
+                            'Custom Clothing & Upholstery'
+                        ],
+                        equipment: [
+                            'Professional Design Software (Adobe Creative Suite)',
+                            'Large Format Printers',
+                            'Sublimation Press',
+                            'DTF Printing Technology',
+                            'Embroidery Machines'
+                        ],
+                        pricing: 'Packages starting from $150 USD'
+                    },
+                    events: {
+                        title: 'Aduk Entertainment (Events)',
+                        icon: 'fas fa-calendar-alt',
+                        description: 'We don\'t plan events—we produce experiences. Transform your gatherings into cinematic moments with our full-service event production.',
+                        services: [
+                            'Event Planning & Coordination',
+                            'Set Design & Décor',
+                            'DMX Lighting & Stage Effects',
+                            'Professional Sound System Installation',
+                            'Wedding & Ceremony Curation',
+                            'Music Festivals, Concerts and Tours',
+                            'Beauty & Fashion Shows',
+                            'Sporting Events (7\'s rugby, 3x3 basketball, marathons)'
+                        ],
+                        equipment: [
+                            'Professional Sound Systems (JBL, QSC, Allen & Heath)',
+                            'DMX Lighting Rigs',
+                            'Stage Equipment & Trussing',
+                            'LED Video Walls',
+                            'Event Management Software'
+                        ],
+                        pricing: 'Custom quotes based on event scale and requirements'
+                    }
+                },
+
+                init() {
+                    if (!DOM.divisionBtns.length || !DOM.modal) return;
+                    
+                    DOM.divisionBtns.forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            const division = btn.dataset.division;
+                            this.openModal(division);
+                        });
+                    });
+
+                    DOM.closeModal?.addEventListener('click', () => this.closeModal());
+                    
+                    // Close modal when clicking outside
+                    DOM.modal.addEventListener('click', (e) => {
+                        if (e.target === DOM.modal) {
+                            this.closeModal();
+                        }
+                    });
+
+                    // Close modal on escape key
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'Escape' && State.isModalOpen) {
+                            this.closeModal();
+                        }
+                    });
+                },
+
+                openModal(division) {
+                    const data = this.divisionData[division];
+                    if (!data) return;
+
+                    const modalHTML = `
+                        <div class="modal-icon">
+                            <i class="${data.icon}"></i>
+                        </div>
+                        <h3 class="modal-title">${data.title}</h3>
+                        <div class="modal-description">
+                            <p>${data.description}</p>
+                        </div>
+                        
+                        <div class="modal-section">
+                            <h4><i class="fas fa-cogs"></i> Services</h4>
+                            <ul class="modal-list">
+                                ${data.services.map(service => `
+                                    <li><i class="fas fa-check-circle"></i> ${service}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        
+                        <div class="modal-section">
+                            <h4><i class="fas fa-microchip"></i> Equipment & Technology</h4>
+                            <ul class="modal-list">
+                                ${data.equipment.map(item => `
+                                    <li><i class="fas fa-cog"></i> ${item}</li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        
+                        <div class="modal-section">
+                            <h4><i class="fas fa-tag"></i> Pricing</h4>
+                            <p style="color: rgba(255,255,255,0.8);">${data.pricing}</p>
+                        </div>
+                        
+                        <div class="modal-cta">
+                            <p>Ready to start your project?</p>
+                            <a href="#booking" class="btn btn-primary" onclick="document.getElementById('closeModal').click();">
+                                <i class="fas fa-calendar-check"></i>
+                                Book This Service
+                            </a>
+                        </div>
+                    `;
+
+                    DOM.modalBody.innerHTML = modalHTML;
+                    DOM.modal.classList.add('active');
+                    State.isModalOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+
+                closeModal() {
+                    DOM.modal.classList.remove('active');
+                    State.isModalOpen = false;
+                    document.body.style.overflow = '';
+                }
+            };
+
+            // ===== Form Handling =====
+            const FormHandler = {
+                init() {
+                    this.initBookingForm();
+                    this.initNewsletterForm();
+                    this.initPhoneFormatting();
+                },
+
+                initBookingForm() {
+                    if (!DOM.bookingForm) return;
+
+                    DOM.bookingForm.addEventListener('submit', (e) => {
+                        e.preventDefault();
+
+                        // Get form data
+                        const formData = new FormData(DOM.bookingForm);
+                        const data = Object.fromEntries(formData);
+
+                        // Validate required fields
+                        if (!data.name || !data.email || !data.phone || !data.service || !data.message) {
+                            Utils.showNotification('Please fill in all required fields', 'error');
+                            return;
+                        }
+
+                        // Validate email
+                        if (!Utils.isValidEmail(data.email)) {
+                            Utils.showNotification('Please enter a valid email address', 'error');
+                            return;
+                        }
+
+                        // Validate phone (basic)
+                        if (data.phone.replace(/\D/g, '').length < 9) {
+                            Utils.showNotification('Please enter a valid phone number', 'error');
+                            return;
+                        }
+
+                        // Success notification
+                        Utils.showNotification('Booking request submitted successfully! We\'ll contact you within 24 hours.', 'success');
+                        
+                        // Reset form
+                        DOM.bookingForm.reset();
+
+                        // Close mobile menu if open
+                        if (State.isMenuOpen) {
+                            MobileMenu.closeMenu();
+                        }
+                    });
+                },
+
+                initNewsletterForm() {
+                    if (!DOM.newsletterForm) return;
+
+                    DOM.newsletterForm.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        
+                        const emailInput = DOM.newsletterForm.querySelector('.newsletter-input');
+                        const email = emailInput.value;
+
+                        if (!Utils.isValidEmail(email)) {
+                            Utils.showNotification('Please enter a valid email address', 'error');
+                            return;
+                        }
+
+                        Utils.showNotification('Thank you for subscribing to our newsletter!', 'success');
+                        emailInput.value = '';
+                    });
+                },
+
+                initPhoneFormatting() {
+                    const phoneInput = document.getElementById('phone');
+                    if (phoneInput) {
+                        phoneInput.addEventListener('input', (e) => {
+                            // Format phone number as user types
+                            let value = e.target.value.replace(/\D/g, '');
+                            if (value.startsWith('263')) {
+                                value = value.slice(3);
+                            }
+                            if (value.length > 9) {
+                                value = value.slice(0, 9);
+                            }
+                            
+                            if (value.length > 0) {
+                                if (value.length <= 3) {
+                                    e.target.value = '+263 ' + value;
+                                } else if (value.length <= 6) {
+                                    e.target.value = '+263 ' + value.slice(0, 3) + ' ' + value.slice(3);
+                                } else {
+                                    e.target.value = '+263 ' + value.slice(0, 3) + ' ' + value.slice(3, 6) + ' ' + value.slice(6);
+                                }
+                            }
+                        });
+                    }
+                }
+            };
+
+            // ===== Back to Top =====
+            const BackToTop = {
+                init() {
+                    if (!DOM.backToTop) return;
+                    
+                    window.addEventListener('scroll', Utils.throttle(() => {
+                        if (window.scrollY > 500) {
+                            DOM.backToTop.classList.add('visible');
+                        } else {
+                            DOM.backToTop.classList.remove('visible');
+                        }
+                    }, 100));
+
+                    DOM.backToTop.addEventListener('click', () => {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            };
+
+            // ===== Smooth Scroll =====
+            const SmoothScroll = {
+                init() {
+                    if (!DOM.smoothLinks.length) return;
+                    
+                    DOM.smoothLinks.forEach(link => {
+                        link.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            
+                            const targetId = link.getAttribute('href');
+                            if (!targetId || targetId === '#') return;
+                            
+                            const targetElement = document.querySelector(targetId);
+                            if (targetElement) {
+                                const headerHeight = DOM.header?.offsetHeight || 80;
+                                const targetPosition = targetElement.offsetTop - headerHeight;
+                                
+                                window.scrollTo({
+                                    top: targetPosition,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        });
+                    });
+                }
+            };
+
+            // ===== Scroll Indicator =====
+            const ScrollIndicator = {
+                init() {
+                    if (!DOM.scrollIndicator) return;
+                    
+                    DOM.scrollIndicator.addEventListener('click', () => {
+                        window.scrollTo({
+                            top: window.innerHeight,
+                            behavior: 'smooth'
+                        });
+                    });
+                }
+            };
+
+            // ===== Map Button =====
+            const MapHandler = {
+                init() {
+                    if (!DOM.mapBtn) return;
+                    
+                    DOM.mapBtn.addEventListener('click', () => {
+                        // Open Google Maps with studio location
+                        const query = encodeURIComponent('Gweru, Zimbabwe');
+                        window.open(`https://www.google.com/maps/search/?api=1&query=${query}`, '_blank');
+                    });
+                }
+            };
+
+            // ===== Cookie Consent =====
+            const CookieConsent = {
+                init() {
+                    if (!DOM.cookieConsent) return;
+                    
+                    // Check if user has already made a choice
+                    const cookieChoice = Utils.getCookie('cookieConsent');
+                    
+                    if (!cookieChoice) {
+                        // Show cookie consent after a short delay
+                        setTimeout(() => {
+                            DOM.cookieConsent.classList.add('show');
+                        }, 2000);
+                    }
+
+                    DOM.acceptCookies?.addEventListener('click', () => {
+                        Utils.setCookie('cookieConsent', 'accepted', 365);
+                        DOM.cookieConsent.classList.remove('show');
+                    });
+
+                    DOM.declineCookies?.addEventListener('click', () => {
+                        Utils.setCookie('cookieConsent', 'necessary', 365);
+                        DOM.cookieConsent.classList.remove('show');
+                    });
+                }
+            };
+
+            // ===== Performance Optimizations =====
+            const Performance = {
+                init() {
+                    // Lazy load images
+                    this.initLazyLoading();
+
+                    // Preload critical resources
+                    this.preloadResources();
+
+                    // Optimize animations for reduced motion preference
+                    this.initReducedMotion();
+                },
+
+                initLazyLoading() {
+                    if ('IntersectionObserver' in window) {
+                        const imageObserver = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    const img = entry.target;
+                                    img.src = img.dataset.src;
+                                    img.classList.add('loaded');
+                                    imageObserver.unobserve(img);
+                                }
+                            });
+                        });
+
+                        document.querySelectorAll('img[data-src]').forEach(img => {
+                            imageObserver.observe(img);
+                        });
+                    }
+                },
+
+                preloadResources() {
+                    // Preconnect to external domains
+                    const domains = [
+                        'https://fonts.googleapis.com',
+                        'https://fonts.gstatic.com',
+                        'https://cdnjs.cloudflare.com'
+                    ];
+
+                    domains.forEach(domain => {
+                        const link = document.createElement('link');
+                        link.rel = 'preconnect';
+                        link.href = domain;
+                        document.head.appendChild(link);
+                    });
+                },
+
+                initReducedMotion() {
+                    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+                    
+                    if (prefersReducedMotion.matches) {
+                        // Disable animations for users who prefer reduced motion
+                        document.documentElement.style.scrollBehavior = 'auto';
+                        
+                        // Stop auto slide
+                        ProjectSlider.stopAutoSlide();
+                    }
+                }
+            };
+
+            // ===== Error Handling =====
+            const ErrorHandler = {
+                init() {
+                    window.addEventListener('error', (e) => {
+                        console.error('Global error:', e.error);
+                        // Log error to analytics in production
+                    });
+
+                    window.addEventListener('unhandledrejection', (e) => {
+                        console.error('Unhandled promise rejection:', e.reason);
+                    });
+                }
+            };
+
+            // ===== Initialize All Modules =====
+            const init = () => {
+                // Hide loader
+                Animations.hideLoader();
+
+                // Initialize all modules
+                Animations.initHeaderScroll();
+                Animations.initScrollReveal();
+                Animations.initParallax();
+
+                MobileMenu.init();
+                TeamTabs.init();
+                ProjectSlider.init();
+                DivisionModal.init();
+                FormHandler.init();
+                BackToTop.init();
+                SmoothScroll.init();
+                ScrollIndicator.init();
+                MapHandler.init();
+                CookieConsent.init();
+                Performance.init();
+                ErrorHandler.init();
+
+                // Log initialization
+                console.log('Aduk Studios website initialized successfully!');
+            };
+
+            // Start when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+
+        })();
+    </script>
+
+    <!-- Add CSS animations for notifications -->
+    <style>
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+
+        .notification {
+            margin-bottom: 10px;
+        }
+
+        .notification-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .notification-close {
+            margin-left: auto;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .notification-close:hover {
+            opacity: 1;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Print styles */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        /* High contrast mode support */
+        @media (forced-colors: active) {
+            .btn,
+            .division-card,
+            .team-member,
+            .project-card {
+                border: 2px solid CanvasText;
+            }
+        }
+    </style>
+</body>
+</html>
